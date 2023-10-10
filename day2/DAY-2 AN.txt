@@ -1,0 +1,39 @@
+SPACE COMPLEXITY
+
+It is parallel to time complexity comcept
+-->array of size n takes O(n) space
+-->2D array will take n*n O(n^2) space
+
+Constant space complexity-->O(1) 
+
+-same amount of space regardless of input size n
+	ex:linear search
+it is O(1) because space is not depending on values
+
+Linear space complexity-->O(n)
+ ex:sum of array elements
+
+Logarthimic space complexity--O(logn)
+ex:QuickSort
+
+Log-linear space complexity-->O(nlogn)
+ex:mergeSort
+
+Polynomial complexity-->O(n^2)
+-space complexity grows proportionally to the squrae of the input size
+ex:
+def generatelists(n:int):
+    mainlist=[]
+    for i in range(n):
+        sublist=[]
+        for j in range(n):
+            sublist.append(j)
+        mainlist.append(sublist)
+    return mainlist
+
+n=int(input())
+print(generatelists(n))
+
+
+
+ 

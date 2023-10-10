@@ -1,0 +1,135 @@
+Program Efficency
+*******************
+
+->efficiency is all about time and space complexity
+
+
+DYNAMIC PROGRAMMING:
+
+->in greedy approach whatever is the solution for the problem given at the first go is fixed as the final solution. 
+Note:this is not the best approach for as the scenarios however it also works for some cases
+
+->in DP we will be finding out all the possible solutions for the given problem out of which the best will picked.
+
+TIME AND SPACE COMPLEXITY
+
+Asymptotic Notations:
+---------------------
+->Big-O
+->Omega
+->theta
+
+Swajith is having 1,00,000 in his account. Rate of intrst is 12% per annum,in the 5th month swajith is withdrawing 25000 inorder to buy a gift for his loved one.In the 9th month 10000 is deposited in his account by his 2nd loved one.End of the financial year howmuch swajith is having in his account.
+
+
+p=int(input())
+SI1=(p*(4/12)*12)/100
+p=p-25000
+SI2=(p*(4/12)*12)/100
+p=p+10000
+SI3=(p*(4/12)*12)/100
+p=p+SI1+SI2+SI3
+print("total balance=",p)
+Note:SI
+
+
+Space complexity:
+-----------------
+
+struct
+{
+int 
+int
+}
+8 bytes
+
+struct 
+{
+int
+double
+}
+12 bytes
+
+struct
+{
+int
+char
+}
+8 bytes
+
+4 bytes for int 1 byte for char and as int is the major one and it takes 4 bytes...in that 4 bytes as 1 byte is allocated for char and 3 bytes left empty
+
+struct
+{
+int
+double
+char
+}
+24 bytes=4+4+8+1+7
+s
+union
+{
+int
+int
+}
+4 bytes
+
+union
+{
+int
+double
+}
+8 bytes
+
+union
+{
+int
+char
+}
+4bytes
+
+	  |	    /
+	  |        /
+	30|       /
+	  |      /
+	  |     /
+y	10|    /
+	  |   /
+	 5|  /
+	  | /
+	  |/____________________
+	     10  20  30
+		   x
+
+
+TIME COMPLEXITY:
+------------------
+
+How many times statement is getting executed
+
+TYPE:
+for(i=0;i<n;i++)  //n+1
+{
+//statements; //n
+}
+
+polynomial theorm f(n)=n+1
+so the time complexity of this type is O(n) (or) Big o of n (or) order of n
+
+for(i=1;i<n;i+2)
+{
+//statements
+}
+
+loop executes for n/2 times
+
+f(n)=n/2
+
+Degree of polynomial is n
+so n/ anything is n
+so here also O(n)
+
+so irrespective of iteration time it is gonna be the same O(n)
+
+
+

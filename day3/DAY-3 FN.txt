@@ -1,0 +1,59 @@
+BIT MANIPULATION
+*****************
+
+C	python	java
+&	  &	  &   Bitwise and
+|	  |	  |   Bitwise Or
+~	  ~       ~   Bitwise Not(1's complement)
+
+Operator precedence
+*******************
+
+* / % --->same priority  should follow associative law
++ -  ----> same priority should follow associative law 
+
+arithmetic operators has higher precedence than bitwise operator
+
+ex:7+2&4+3&9 = 1
+
+~ ---> 1st priority
+& --->2nd priority
+^ --->3rd priority
+| --->last priority
+
+10&4~2 ----> invalid expression as negation can't be placed between two operands
+~10&4  is valid  
+
+X-OR:
+*****
+when both the inputs are same the ouput is 0
+
+OR is inclusive X-OR
+X-OR is exclusive X-OR
+
+
+BIT MANIPULATION tricks:
+************************
+
+X-OR
+-----
+-> X-OR of a number with itself is 0
+-> X-OR of a number with 0 is itself
+-> even 1's : 0
+-> odd 1's : 1
+
+Right Shift(>>)
+---------------
+
+-> 5>>1 is 5/2 i.e., 2
+
+Left Shift(<<)
+---------------
+
+->5<<1 is 5*2 i.e., 10
+->5<<n is 5*power(2,n)
+
+
+
+
+
